@@ -1,11 +1,11 @@
 
 function buildQueryURL() {
     // the url  to query the API
-    var queryURL = "https://cors-anywhere.herokuapp.com/https://api.nytimes.com/svc/search/v2/articlesearch.json?";
+    var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=election&api-key=ysEbcONgA7qdtUQh5dnSX6q7hTXurip0";
   
     
     // Set the API key
-    var queryParams = { "api-key": "ysEbcONgA7qdtUQh5dnSX6q7hTXurip0" };
+    //var queryParams = { "api-key": "ysEbcONgA7qdtUQh5dnSX6q7hTXurip0" };
   
     // text typed by the user into the search input, add to the queryParams object
     queryParams.q = $("#search-term")
