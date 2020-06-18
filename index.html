@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header here -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="jumbotron">
+            <h1 class="display-4 text-center">Hello, world!</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 1 with form - 4 fields, second is a dropdown, and 2 buttons -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              Featured
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <label for="search-term">Search Term</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="search-term"
+                    placeholder="Put your search term in here"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="num-records">Number of records to retrieve</label>
+                  <select class="form-control" id="num-records">
+                    <option>5</option>
+                    <option>10</option>
+                    <option>15</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="start-year">Start Year</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="start-year"
+                    placeholder=""
+                  />
+                </div>
+                <div class="form-group">
+                    <label for="end-year">End Year</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="end-year"
+                      placeholder=""
+                    />
+                  </div>
+              </form>
+              <button type="button" class="btn btn-light" id="search">Search</button>
+              <button type="button" class="btn btn-light" id="clear">Clear Results</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 will display the articles -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              Featured
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
